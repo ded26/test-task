@@ -1,0 +1,51 @@
+﻿@model PagedList.IPagedList<TwitterApp.Models.Tweets>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "History";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>History</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            User name
+        </th>
+        <th>
+            Profile image
+        </th>
+        <th>
+            Text
+        </th>
+        <th>
+            Created at
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            <img src="@item.ProfileImage"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Text)
+        </td>
+        <td>
+
+            @Html.DisplayFor(modelItem => item.CreatedAt)
+        </td>
+        <td>
+            @Html.ActionLink("Delete tweet", "Delete", new { id = item.Id }, new { @class = "btn btn-primary" })
+        </td>
+    </tr>
+}
+
+</table>
+<a href="/Home/ClearDB" class="btn btn-primary">Clear Database</a>
+@Html.PagedListPager(Model, page => Url.Action("History", new { page }))

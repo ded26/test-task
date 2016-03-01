@@ -1,0 +1,14 @@
+﻿<div class="jumbotron">
+    @using (Html.BeginForm("Search", "Home", new { @role = "form", @class = "form-inline" }))
+    {
+        <div class="form-group">
+            <label for="query">Enter a query text</label>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="query" />
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" id="search" value="Search" />
+        </div>
+    }
+</div>
