@@ -1,0 +1,7 @@
+D:\projects\test-task\TwitterApp\TwitterInteraction\bin\Release\TwitterInteraction.dll
+D:\projects\test-task\TwitterApp\TwitterInteraction\bin\Release\TwitterInteraction.pdb
+D:\projects\test-task\TwitterApp\TwitterInteraction\bin\Release\Newtonsoft.Json.dll
+D:\projects\test-task\TwitterApp\TwitterInteraction\bin\Release\Newtonsoft.Json.xml
+D:\projects\test-task\TwitterApp\TwitterInteraction\obj\Release\TwitterInteraction.dll
+D:\projects\test-task\TwitterApp\TwitterInteraction\obj\Release\TwitterInteraction.pdb
+D:\projects\test-task\TwitterApp\TwitterInteraction\obj\Release\TwitterInteraction.csprojResolveAssemblyReference.cache
